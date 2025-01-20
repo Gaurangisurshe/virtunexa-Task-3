@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Creation</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Create a Poll</h1>
+    </header>
+    <main>
+        <form id="pollForm">
+            <label for="question">Poll Question:</label>
+            <input type="text" id="question" required>
+            <label for="options">Options (comma-separated):</label>
+            <input type="text" id="options" required>
+            <button type="submit">Create Poll</button>
+        </form>
+        <div id="errorMessage" style="color: red;"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
